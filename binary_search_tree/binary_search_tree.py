@@ -1,9 +1,16 @@
 import sys
-sys.path.append('../queue_and_stack')
+# sys.path.append('../queue_and_stack')
 from dll_queue import Queue
 from dll_stack import Stack
 
+#lru_cache(maxsize=500) 
+#least recently used (will purge if not lrc)
+#wraps another function HOC - behind the scenes
+#takes form of key value pairs
+#keep track of priority order can use other DS to help with this
+#MRU etc many types
 
+#hints: single nodes can still be binary search trees
 class BinarySearchTree:
     def __init__(self, value):
         self.value = value
