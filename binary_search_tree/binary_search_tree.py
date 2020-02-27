@@ -1,5 +1,9 @@
+import os
 import sys
-# sys.path.append('../queue_and_stack')
+
+queue_stack_path = os.path.normpath(os.path.join(__file__, '../../queue_and_stack'))
+sys.path.append(queue_stack_path)
+
 from dll_queue import Queue
 from dll_stack import Stack
 
@@ -68,7 +72,7 @@ class BinarySearchTree:
         # iterative solution
         current_tree_root = self
         while current_tree_root.right: # can also be while current_tree_root is not None: 
-            current_tree_root = current_tree_root.right #REMEMBER LEVI THIS MOVES CURR TO THE RIGHT POSITION AS THE NEW CURR 
+            current_tree_root = current_tree_root.right #REMEMBER THIS MOVES CURR TO THE RIGHT POSITION AS THE NEW CURR 
 
         return current_tree_root.value
 
