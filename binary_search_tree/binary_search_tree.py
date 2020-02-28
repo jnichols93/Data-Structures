@@ -109,6 +109,8 @@ class BinarySearchTree:
     # Note: Research may be required
 
     # Print Pre-order recursive DFT
+    # start at the root then go left and right. doesnt put things back in order.
+    # before you sort your tree you make a copy of it
     def pre_order_dft(self, *args):
         print(self.value)
         if self.left:
